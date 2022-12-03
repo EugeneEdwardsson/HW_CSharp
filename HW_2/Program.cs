@@ -6,28 +6,27 @@
 
 
 
-// Console.WriteLine($"Input three digit number: ");
-// int inputNum = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine($"Input three digit number: ");
+int inputNum = Convert.ToInt32(Console.ReadLine());
 
-// int ShowTwoDigit(int number)
-// {
-//   if (number > 99 && number < 1000)
-//   {
-//     int div = number / 10;
-//     int res = div % 10;
-//     Console.WriteLine($"Second digit number: {res}");
-//     return res;
+int ShowTwoDigit(int number)
+{
+  if (number > 99 && number < 1000)
+  {
+    int div = number / 10 % 10;
+    Console.WriteLine($"Second digit number: {div}");
+    return div;
 
-//   }
-//   else
-//   {
-//     Console.WriteLine($"Number contains more than three characters!!!");
-//     return number;
-//   }
+  }
+  else
+  {
+    Console.WriteLine($"Number contains more than three characters!!!");
+    return number;
+  }
  
-// }
+}
 
-// int twoDigit = ShowTwoDigit(inputNum);
+int twoDigit = ShowTwoDigit(inputNum);
 
 
 
