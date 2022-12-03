@@ -33,18 +33,20 @@ bool ShowThreeDigit(int number)
  string anyNumberString = Convert.ToString(number);
  if (anyNumberString.Length > 2)
  {
-    Console.WriteLine($"Three digit number: {anyNumberString[2]}");
-    return true;
+   Console.WriteLine($"Three digit number: {anyNumberString[2]}");
+   return true;
  }
  else
  {
-    Console.WriteLine("Entered number less than three digits: ");
+    Console.WriteLine("Entered number less than three digits!!!");
     return false;
  }
+ 
 }
 
 
-Console.WriteLine(ShowThreeDigit(givenNumber));
+bool threeDig = ShowThreeDigit(givenNumber);
+Console.WriteLine(threeDig);
 
 
 
