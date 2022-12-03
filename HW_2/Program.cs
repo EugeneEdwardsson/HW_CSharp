@@ -3,6 +3,19 @@
 
 //Задача 10: Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
 
+int numberRandom = new Random().Next(100,1000);
+Console.WriteLine($"Random three digit number: {numberRandom}");
+
+int ShowTwoDigit(int number)
+{
+int div = number / 10;
+
+return div % 10;
+
+}
+
+int twoDigit = ShowTwoDigit(numberRandom);
+Console.WriteLine($"Second digit number: {twoDigit}");
 
 
 
