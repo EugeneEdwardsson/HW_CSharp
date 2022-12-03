@@ -38,14 +38,37 @@ Console.Write("Enter Second number. ");
 int numberTwo = Convert.ToInt32(Console.ReadLine());
 Console.Write("Enter Third number. ");
 int numberThree = Convert.ToInt32(Console.ReadLine());
-int max = numberOne;
 
-if (numberOne > max) max = numberOne;
-if (numberTwo > max) max = numberTwo;
-if (numberThree > max) max = numberThree;
 
-Console.WriteLine("Max = " + max);
+int EqualMaxNum(int numOne, int numTwo, int numThree)
+{
 
+   int max = numOne;
+
+
+   if (numOne > max)
+ {    max = numOne; 
+      Console.WriteLine("Max = " + max);
+      return max;
+ }
+   else if (numberTwo > max)
+ {   
+    max = numTwo;
+    Console.WriteLine("Max = " + max);
+    return max;
+ }
+ else
+ {
+    max = numThree; 
+    Console.WriteLine("Max = " + max);
+    return max;
+ }
+
+   
+}
+
+
+int result = EqualMaxNum(numberOne, numberTwo, numberThree);
 
 
 //Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
