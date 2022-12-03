@@ -32,61 +32,69 @@
 // Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
 
 
-Console.Write("Enter First number. ");
-int numberOne = Convert.ToInt32(Console.ReadLine());
-Console.Write("Enter Second number. ");
-int numberTwo = Convert.ToInt32(Console.ReadLine());
-Console.Write("Enter Third number. ");
-int numberThree = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Enter First number. ");
+// int numberOne = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Enter Second number. ");
+// int numberTwo = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Enter Third number. ");
+// int numberThree = Convert.ToInt32(Console.ReadLine());
 
 
-int EqualMaxNum(int numOne, int numTwo, int numThree)
-{
+// int EqualMaxNum(int numOne, int numTwo, int numThree)
+// {
 
-   int max = numOne;
+//    int max = numOne;
 
 
-   if (numOne > max)
- {    max = numOne; 
-      Console.WriteLine("Max = " + max);
-      return max;
- }
-   else if (numberTwo > max)
- {   
-    max = numTwo;
-    Console.WriteLine("Max = " + max);
-    return max;
- }
- else
- {
-    max = numThree; 
-    Console.WriteLine("Max = " + max);
-    return max;
- }
+//    if (numOne > max)
+//  {    max = numOne; 
+//       Console.WriteLine("Max = " + max);
+//       return max;
+//  }
+//    else if (numberTwo > max)
+//  {   
+//     max = numTwo;
+//     Console.WriteLine("Max = " + max);
+//     return max;
+//  }
+//  else
+//  {
+//     max = numThree; 
+//     Console.WriteLine("Max = " + max);
+//     return max;
+//  }
 
    
-}
-
-
-int result = EqualMaxNum(numberOne, numberTwo, numberThree);
-
-
-//Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
-
-
-// Console.Write("Enter number: ");
-// int number = Convert.ToInt32(Console.ReadLine());
-
-// if (number % 2 == 0) 
-// {
-//     Console.Write("Entered number is even" + number);
-// } 
-//  else
-// {
-//     Console.Write("Entered number is odd" + number);
 // }
 
 
+// int result = EqualMaxNum(numberOne, numberTwo, numberThree);
+
+
+// Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
+
+
+Console.Write("Enter number: ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+
+bool ParityCheck(int num)
+{
+
+if (num % 2 == 0) 
+{
+    Console.Write($"Entered number is even: {num}");
+    return true;
+} 
+ else
+{
+    Console.Write($"Entered number is odd: {num}");
+    return false;
+}
+
+}
+
+bool result = ParityCheck(number);
 
 //Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
 
