@@ -5,19 +5,30 @@
 
 
 
-// int numberRandom = new Random().Next(100,1000);
-// Console.WriteLine($"Random three digit number: {numberRandom}");
 
-// int ShowTwoDigit(int number)
-// {
-// int div = number / 10;
+Console.WriteLine($"Input three digit number: ");
+int numberRandom = Convert.ToInt32(Console.ReadLine());
 
-// return div % 10;
+int ShowTwoDigit(int number)
+{
+  if (number < 100 || number < 1000)
+  {
+    int div = number / 10;
+    int res = div % 10;
+    Console.WriteLine($"Second digit number: {res}");
+    return res;
 
-// }
+  }
+  else
+  {
+    Console.WriteLine($"Number contains more than three characters!!!");
+    return number;
+  }
+ 
+}
 
-// int twoDigit = ShowTwoDigit(numberRandom);
-// Console.WriteLine($"Second digit number: {twoDigit}");
+int twoDigit = ShowTwoDigit(numberRandom);
+
 
 
 
@@ -25,28 +36,28 @@
 //Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 
 
-Console.WriteLine("Input the number: ");
-int givenNumber = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Input the number: ");
+//int givenNumber = Convert.ToInt32(Console.ReadLine());
 
-bool ShowThreeDigit(int number)
-{
- string anyNumberString = Convert.ToString(number);
- if (anyNumberString.Length > 2)
- {
-   Console.WriteLine($"Three digit number: {anyNumberString[2]}");
-   return true;
- }
- else
- {
-    Console.WriteLine("Entered number less than three digits!!!");
-    return false;
- }
+// bool ShowThreeDigit(int number)
+// {
+//  string anyNumberString = Convert.ToString(number);
+//  if (anyNumberString.Length > 2)
+//  {
+//    Console.WriteLine($"Three digit number: {anyNumberString[2]}");
+//    return true;
+//  }
+//  else
+//  {
+//     Console.WriteLine("Entered number less than three digits!!!");
+//     return false;
+//  }
  
-}
+// }
 
 
-bool threeDig = ShowThreeDigit(givenNumber);
-Console.WriteLine(threeDig);
+// bool threeDig = ShowThreeDigit(givenNumber);
+// Console.WriteLine(threeDig);
 
 
 
