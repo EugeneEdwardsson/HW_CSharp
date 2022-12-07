@@ -7,10 +7,10 @@
 
 
 
- Console.Write("Input number: ");
+ Console.Write("Enter a number to check for a palindrome : ");
  int numberInput = Convert.ToInt32(Console.ReadLine());
 
-    void Pallindrom(int num)
+    bool Pallindrom(int num)
     {
         int pal = 0;
         int number = num;
@@ -22,18 +22,20 @@
         }
 
         if (number == pal)
-        {
-           Console.WriteLine("Palindrom");
+        { 
+            Console.WriteLine("This is palindrom!");
+            return true;
         }
         else
         {
-           Console.WriteLine("Not palindrom");   
+            Console.WriteLine("This is not palindrom!");
+            return false;  
         }
     
     }
 
 
-    Pallindrom(numberInput);
+    bool palCheck = Pallindrom(numberInput);
 
 
 
