@@ -7,27 +7,33 @@
 
 
 
+ Console.Write("Input number: ");
+ int numberInput = Convert.ToInt32(Console.ReadLine());
+
+    void Pallindrom(int num)
+    {
+        int pal = 0;
+        int number = num;
+
+        while (num > 0) 
+        {
+             pal = pal * 10 + num % 10; 
+             num /= 10;
+        }
+
+        if (number == pal)
+        {
+           Console.WriteLine("Palindrom");
+        }
+        else
+        {
+           Console.WriteLine("Not palindrom");   
+        }
+    
+    }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    Pallindrom(numberInput);
 
 
 
@@ -63,23 +69,23 @@
 
 //Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
 
-    Console.Write("Enter number N: ");
-    int numberN = Convert.ToInt32(Console.ReadLine());
+    // Console.Write("Enter number N: ");
+    // int numberN = Convert.ToInt32(Console.ReadLine());
 
 
-    void tableSquareN(int n)
-    {
+    // void tableSquareN(int n)
+    // {
 
-      int res = 1;
+    //   int res = 1;
 
-      while (res < n) 
-      {
-        Console.WriteLine(" " + Math.Pow(res, 3));
-        res++; 
-      }
+    //   while (res < n) 
+    //   {
+    //     Console.WriteLine(" " + Math.Pow(res, 3));
+    //     res++; 
+    //   }
         
-    }
+    // }
     
-    Console.WriteLine($"Table of cubes of the entered number: {numberN}");
-    tableSquareN(numberN);
+    // Console.WriteLine($"Table of cubes of the entered number: {numberN}");
+    // tableSquareN(numberN);
     
