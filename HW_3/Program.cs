@@ -10,7 +10,7 @@
  Console.Write("Enter a number to check for a palindrome : ");
  int numberInput = Convert.ToInt32(Console.ReadLine());
 
-    bool Pallindrom(int num)
+    bool Palindrom(int num)
     {
         int pal = 0;
         int number = num;
@@ -35,7 +35,7 @@
     }
 
 
-    bool palCheck = Pallindrom(numberInput);
+    bool palCheck = Palindrom(numberInput);
 
 
 
