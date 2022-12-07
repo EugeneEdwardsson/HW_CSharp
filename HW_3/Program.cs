@@ -5,8 +5,6 @@
 //Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
 
 
-
-
  Console.Write("Enter a number to check for a palindrome : ");
  int numberInput = Convert.ToInt32(Console.ReadLine());
 
@@ -36,8 +34,6 @@
 
 
     bool palCheck = Palindrom(numberInput);
-
-
 
 
 // //Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
