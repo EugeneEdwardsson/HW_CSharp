@@ -1,0 +1,15 @@
+/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_C#/HW_4/bin/Debug/net6.0/HW_4
+/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_C#/HW_4/bin/Debug/net6.0/HW_4.deps.json
+/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_C#/HW_4/bin/Debug/net6.0/HW_4.runtimeconfig.json
+/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_C#/HW_4/bin/Debug/net6.0/HW_4.dll
+/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_C#/HW_4/bin/Debug/net6.0/HW_4.pdb
+/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_C#/HW_4/obj/Debug/net6.0/HW_4.csproj.AssemblyReference.cache
+/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_C#/HW_4/obj/Debug/net6.0/HW_4.GeneratedMSBuildEditorConfig.editorconfig
+/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_C#/HW_4/obj/Debug/net6.0/HW_4.AssemblyInfoInputs.cache
+/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_C#/HW_4/obj/Debug/net6.0/HW_4.AssemblyInfo.cs
+/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_C#/HW_4/obj/Debug/net6.0/HW_4.csproj.CoreCompileInputs.cache
+/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_C#/HW_4/obj/Debug/net6.0/HW_4.dll
+/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_C#/HW_4/obj/Debug/net6.0/refint/HW_4.dll
+/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_C#/HW_4/obj/Debug/net6.0/HW_4.pdb
+/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_C#/HW_4/obj/Debug/net6.0/HW_4.genruntimeconfig.cache
+/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_C#/HW_4/obj/Debug/net6.0/ref/HW_4.dll
