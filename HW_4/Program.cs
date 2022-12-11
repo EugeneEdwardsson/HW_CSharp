@@ -56,6 +56,10 @@
 //Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
 
 
+Console.Write("Input a number of elements: ");
+int length = Convert.ToInt32(Console.ReadLine());
+
+
 int[] CreateArray(int size)
 {
     int[] array = new int[size];
@@ -80,10 +84,6 @@ void PrintArray(int[] array)
         Console.WriteLine($"\n{i + 1} element is array: {array[i]}");   
     }
 }
-
-
-Console.Write("Input a number of elements: ");
-int length = Convert.ToInt32(Console.ReadLine());
 
 int[] myArray = CreateArray(length);
 PrintArray(myArray);
