@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_5/HW_5.csproj": {}
+    "/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_C#/HW_5/HW_5.csproj": {}
   },
   "projects": {
-    "/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_5/HW_5.csproj": {
+    "/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_C#/HW_5/HW_5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_5/HW_5.csproj",
+        "projectUniqueName": "/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_C#/HW_5/HW_5.csproj",
         "projectName": "HW_5",
-        "projectPath": "/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_5/HW_5.csproj",
+        "projectPath": "/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_C#/HW_5/HW_5.csproj",
         "packagesPath": "/Users/eugeneberezkin/.nuget/packages/",
-        "outputPath": "/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_5/obj/",
+        "outputPath": "/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_C#/HW_5/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/eugeneberezkin/.nuget/NuGet/NuGet.Config"
