@@ -166,3 +166,6 @@ void DiffMinMaxValues(double[] array)
   PrintArray(myArray);
   DiffMinMaxValues(myArray);
   
+
+
+  
