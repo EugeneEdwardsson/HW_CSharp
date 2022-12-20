@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_6/HW_6.csproj",
+      "projectUniqueName": "/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_C#/HW_6/HW_6.csproj",
       "projectName": "HW_6",
-      "projectPath": "/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_6/HW_6.csproj",
+      "projectPath": "/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_C#/HW_6/HW_6.csproj",
       "packagesPath": "/Users/eugeneberezkin/.nuget/packages/",
-      "outputPath": "/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_6/obj/",
+      "outputPath": "/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_C#/HW_6/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/eugeneberezkin/.nuget/NuGet/NuGet.Config"

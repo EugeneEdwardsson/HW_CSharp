@@ -110,15 +110,18 @@ double[] CreateRandomArray(int size)//, double minValue, double maxValue)
      double[] array = new double[size];
      
 
-    for(int i = 0; i < size; i++)
+    for(int i = 0; i < array.Length; i++)
     {    
         array[i] = new Random().NextDouble() * 1000 / 10;    //Convert.ToDouble(new Random().Next(minValue,maxValue)) * 100 / 10; 
     }    
 
-    for(int j = 1; j < size; j+=2)
+    for(int j = 1; j < array.Length; j++)
     {   
+         
+        double arr = array[j];
         array[j] = new Random().NextDouble();
-       
+        array[0] = Math.Round(arr, 2);
+        array[j] = Math.Round(arr, 2);
     }
     
     return array;

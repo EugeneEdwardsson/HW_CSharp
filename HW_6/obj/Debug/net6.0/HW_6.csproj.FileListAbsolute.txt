@@ -1,0 +1,5 @@
+/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_C#/HW_6/obj/Debug/net6.0/HW_6.csproj.AssemblyReference.cache
+/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_C#/HW_6/obj/Debug/net6.0/HW_6.GeneratedMSBuildEditorConfig.editorconfig
+/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_C#/HW_6/obj/Debug/net6.0/HW_6.AssemblyInfoInputs.cache
+/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_C#/HW_6/obj/Debug/net6.0/HW_6.AssemblyInfo.cs
+/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_C#/HW_6/obj/Debug/net6.0/HW_6.csproj.CoreCompileInputs.cache
