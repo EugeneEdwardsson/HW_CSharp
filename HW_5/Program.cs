@@ -105,14 +105,14 @@
 
 
 
-double[] CreateRandomArray(int size)//, double minValue, double maxValue)
+double[] CreateRandomArray(int size)
 {
      double[] array = new double[size];
      
 
     for(int i = 0; i < array.Length; i++)
     {    
-        array[i] = new Random().NextDouble() * 1000 / 10;    //Convert.ToDouble(new Random().Next(minValue,maxValue)) * 100 / 10; 
+        array[i] = new Random().NextDouble() * 1000 / 10;    
     }    
 
     for(int j = 1; j < array.Length; j++)
@@ -161,11 +161,7 @@ void DiffMinMaxValues(double[] array)
 
   Console.Write("Input number elements: ");
   int lenght = Convert.ToInt32(Console.ReadLine());
-//   Console.Write("Input a min possible value: ");
-//   int min = Convert.ToInt32(Console.ReadLine());
-//   Console.Write("Input a max possible value: ");
-//   int max = Convert.ToInt32(Console.ReadLine());
-  double[] myArray = CreateRandomArray(lenght); //, min, max);
+  double[] myArray = CreateRandomArray(lenght);
   PrintArray(myArray);
   DiffMinMaxValues(myArray);
   
