@@ -3,3 +3,13 @@
 /Users/eugeneberezkin/Desktop/Develop/Home Work/HW_C#/HW_6/obj/Debug/net6.0/HW_6.AssemblyInfoInputs.cache
 /Users/eugeneberezkin/Desktop/Develop/Home Work/HW_C#/HW_6/obj/Debug/net6.0/HW_6.AssemblyInfo.cs
 /Users/eugeneberezkin/Desktop/Develop/Home Work/HW_C#/HW_6/obj/Debug/net6.0/HW_6.csproj.CoreCompileInputs.cache
+/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_C#/HW_6/bin/Debug/net6.0/HW_6
+/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_C#/HW_6/bin/Debug/net6.0/HW_6.deps.json
+/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_C#/HW_6/bin/Debug/net6.0/HW_6.runtimeconfig.json
+/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_C#/HW_6/bin/Debug/net6.0/HW_6.dll
+/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_C#/HW_6/bin/Debug/net6.0/HW_6.pdb
+/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_C#/HW_6/obj/Debug/net6.0/HW_6.dll
+/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_C#/HW_6/obj/Debug/net6.0/refint/HW_6.dll
+/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_C#/HW_6/obj/Debug/net6.0/HW_6.pdb
+/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_C#/HW_6/obj/Debug/net6.0/HW_6.genruntimeconfig.cache
+/Users/eugeneberezkin/Desktop/Develop/Home Work/HW_C#/HW_6/obj/Debug/net6.0/ref/HW_6.dll

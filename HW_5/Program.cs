@@ -105,66 +105,64 @@
 
 
 
-double[] CreateRandomArray(int size)
-{
-     double[] array = new double[size];
+// double[] CreateRandomArray(int size)
+// {
+//      double[] array = new double[size];
      
 
-    for(int i = 0; i < array.Length; i++)
-    {    
-        array[i] = new Random().NextDouble() * 1000 / 10;    
-    }    
+//     for(int i = 0; i < array.Length; i++)
+//     {    
+//         array[i] = new Random().NextDouble() * 1000 / 10;    
+//     }    
 
-    for(int j = 1; j < array.Length; j++)
-    {   
+//     for(int j = 1; j < array.Length; j++)
+//     {   
          
-        double arr = array[j];
-        array[j] = new Random().NextDouble();
-        array[0] = Math.Round(arr, 2);
-        array[j] = Math.Round(arr, 2);
-    }
+//         double arr = array[j];
+//         array[j] = new Random().NextDouble();
+//         array[0] = Math.Round(arr, 2);
+//         array[j] = Math.Round(arr, 2);
+//     }
     
-    return array;
+//     return array;
 
 
-}
+// }
 
 
-void PrintArray(double[] array)
-{
-    for(int i = 0; i < array.Length; i++)
-    {
-        Console.Write(array[i] + " ");
-    }    
-    Console.WriteLine();
-}
+// void PrintArray(double[] array)
+// {
+//     for(int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write(array[i] + " ");
+//     }    
+//     Console.WriteLine();
+// }
 
-void DiffMinMaxValues(double[] array)
-{
-      double minVal = array[0];
-      double maxVal = minVal;
+// void DiffMinMaxValues(double[] array)
+// {
+//       double minVal = array[0];
+//       double maxVal = minVal;
 
-      for (int i = 0; i < array.Length; i++)
-      {
-         if (array[i] < minVal)
-         {
-             minVal = array[i];
-         }
-         if (array[i] > maxVal)
-         {
-             maxVal = array[i];
-         }
-      }
-    Console.WriteLine($"Difference between: {maxVal - minVal}");
-}
+//       for (int i = 0; i < array.Length; i++)
+//       {
+//          if (array[i] < minVal)
+//          {
+//              minVal = array[i];
+//          }
+//          if (array[i] > maxVal)
+//          {
+//              maxVal = array[i];
+//          }
+//       }
+//     Console.WriteLine($"Difference between: {maxVal - minVal}");
+// }
 
 
-  Console.Write("Input number elements: ");
-  int lenght = Convert.ToInt32(Console.ReadLine());
-  double[] myArray = CreateRandomArray(lenght);
-  PrintArray(myArray);
-  DiffMinMaxValues(myArray);
+//   Console.Write("Input number elements: ");
+//   int lenght = Convert.ToInt32(Console.ReadLine());
+//   double[] myArray = CreateRandomArray(lenght);
+//   PrintArray(myArray);
+//   DiffMinMaxValues(myArray);
   
 
-
-  
