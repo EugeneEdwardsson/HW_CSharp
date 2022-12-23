@@ -58,19 +58,19 @@ double[] FindPointIntersectionTwoLine(double b1 ,double k1, double b2, double k2
 void CheckingPointsForPosition(double b1 ,double k1, double b2, double k2)
 {
 
-if(k1 == k2 && b1 == b2)
+    if(k1 == k2 && b1 == b2)
 
-    Console.WriteLine("Direct lines coincide relative to each other!");
+        Console.WriteLine("Direct lines coincide relative to each other!");
 
-else if(k1 == k2)
+    else if(k1 == k2)
 
-    Console.WriteLine("The lines are parallel to each other!");
+        Console.WriteLine("The lines are parallel to each other!");
 
-else
-{
-    double[] points = FindPointIntersectionTwoLine(k1, b1, k2, b2);
-    Console.WriteLine( $"Point of intersection of two lines: ({points[0]}  {points[1]})");
-}
+    else
+    {
+        double[] points = FindPointIntersectionTwoLine(k1, b1, k2, b2);
+        Console.WriteLine( $"Point of intersection of two lines: ({points[0]}  {points[1]})");
+    }
 
 }
 
