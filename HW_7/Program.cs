@@ -42,13 +42,13 @@
 
 int[,] CreateRandomArray()
 {
-    Console.WriteLine("input a number of rows ");
+    Console.WriteLine("input a number of rows: ");
     int rows = Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine("input a number of colums ");
+    Console.WriteLine("input a number of colums: ");
     int colums = Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine("input a min possible value ");
+    Console.WriteLine("input a min possible value: ");
     int minValue = Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine("input a max possible value ");
+    Console.WriteLine("input a max possible value: ");
     int maxValue = Convert.ToInt32(Console.ReadLine());
     
     int[,] array = new int[rows, colums];
@@ -63,27 +63,48 @@ int[,] CreateRandomArray()
     return array;
 }
 void Show2dArray(int[,] array)
-{
+{   
+    Console.WriteLine("----------------------");
+
     for(int i = 0; i < array.GetLength(0);i++)
     {
-        for(int j = 0;j < array.GetLength(1); j++)
-        {
+        for(int j = 0; j < array.GetLength(1); j++)
+        {   
             Console.Write(array[i,j] + "\t");
         }
-        Console.WriteLine();
+       
+       Console.WriteLine(); 
+       
     }
-    Console.WriteLine();
+
+    Console.WriteLine("----------------------");
+}
+
+
+void FindElementPosition(int[,] array, int row, int column)
+{
+    if (array.GetLength(0) > row - 1 && array.GetLength(1) > column - 1)
+    {
+        Console.Write($"The value of the element at the selected position: {array[row - 1,column - 1]}");
+    }
+    else
+    {
+        Console.Write("The indexes entered are not in the array!!!");
+    }           
 }
 
 int[,] myArray = CreateRandomArray();
 Show2dArray(myArray);
 
+Console.WriteLine("input a index position of row: ");
+int row = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("input a index position of column: ");
+int column = Convert.ToInt32(Console.ReadLine());
+FindElementPosition(myArray, row, column);
+
+
 
 //Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
-
-
-
-
 
 
 
