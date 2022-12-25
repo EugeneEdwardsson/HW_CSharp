@@ -142,17 +142,46 @@ void Show2dArray(int[,] array)
        Console.WriteLine(); 
 
     }
+    
+    Console.WriteLine("-Arithmetic mean of a column-");
+    
+}
 
-    Console.WriteLine("----------------------");
+void PrintArray(int[] array)
+{
+    for(int i = 0; i < array.Length; i++)
+    {
+        Console.Write(array[i] + "\t");
+    }    
+    Console.WriteLine( );
 }
 
 
+int[] ArithmeticMeanOfAColumn(int[,] array)
+{    
+    int[] myArr = new int[array.GetLength(1)];
 
+
+      for (int j = 0; j < array.GetLength(1); j++)
+      {
+          int sum = 0;
+
+          for (int i = 0; i < array.GetLength(0); i++)
+          {
+              sum += array[i,j];
+          }
+           
+           myArr[j] = sum / array.GetLength(1);
+      }
+
+      return myArr;
+
+}
 
 int[,] myArray = CreateRandomArray();
 Show2dArray(myArray);
-
-
+int[] myArr = ArithmeticMeanOfAColumn(myArray);
+PrintArray(myArr);
 
 
 
