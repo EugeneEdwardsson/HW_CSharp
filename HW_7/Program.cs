@@ -147,7 +147,7 @@ void Show2dArray(int[,] array)
     
 }
 
-void PrintArray(int[] array)
+void PrintArray(double[] array)
 {
     for(int i = 0; i < array.Length; i++)
     {
@@ -157,21 +157,21 @@ void PrintArray(int[] array)
 }
 
 
-int[] ArithmeticMeanOfAColumn(int[,] array)
+double[] ArithmeticMeanOfAColumn(int[,] array)
 {    
-    int[] myArr = new int[array.GetLength(1)];
+    double[] myArr = new double[array.GetLength(1)];
 
 
       for (int j = 0; j < array.GetLength(1); j++)
       {
-          int sum = 0;
+          double sum = 0;
 
           for (int i = 0; i < array.GetLength(0); i++)
           {
               sum += array[i,j];
           }
            
-           myArr[j] = sum / array.GetLength(1);
+           myArr[j] = Math.Round(sum / array.GetLength(1), 1);
       }
 
       return myArr;
@@ -180,8 +180,8 @@ int[] ArithmeticMeanOfAColumn(int[,] array)
 
 int[,] myArray = CreateRandomArray();
 Show2dArray(myArray);
-int[] myArr = ArithmeticMeanOfAColumn(myArray);
-PrintArray(myArr);
+double[] middleArithArr = ArithmeticMeanOfAColumn(myArray);
+PrintArray(middleArithArr);
 
 
 
