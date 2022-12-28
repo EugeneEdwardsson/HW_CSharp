@@ -6,19 +6,19 @@ N = 5 -> "5, 4, 3, 2, 1"
 N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1" 
 */
 
-void PrintNumbers(int num)
-{   
-    if (num > 0)
-    {  
-       Console.Write(num + " ");
-       PrintNumbers(num - 1);
-    }
+// void PrintNumbers(int num)
+// {   
+//     if (num > 0)
+//     {  
+//        Console.Write(num + " ");
+//        PrintNumbers(num - 1);
+//     }
      
-}
+// }
 
-Console.Write("Input a number: ");
-int n = Convert.ToInt32(Console.ReadLine());
-PrintNumbers(n);
+// Console.Write("Input a number: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// PrintNumbers(n);
 
 
 
@@ -30,24 +30,26 @@ M = 4; N = 8. -> 30
 
 
 
-    void SumNumbers(int n, int m)
+    int SumNumbers(int m, int n)
     {
+         if(m < n)
+         { 
+            return m + SumNumbers(m + 1,n);
+         }
+         if(m > n)
+         {  
+            return m + SumNumbers(m - 1,n);
+         }
 
-      int res = 1;
-
-      while (res < n) 
-      {
-        Console.WriteLine(" ");
-        res++; 
-      }
-        
+       return n;       
     }
     
-    Console.Write("Enter number N: ");
-    int n = Convert.ToInt32(Console.ReadLine());
     Console.Write("Enter number M: ");
     int m = Convert.ToInt32(Console.ReadLine());
-    SumNumbers(n,m);
+    Console.Write("Enter number N: ");
+    int n = Convert.ToInt32(Console.ReadLine());
+    int res = SumNumbers(m,n);
+    Console.WriteLine("Sum: " + (res));
 
 
 
