@@ -30,26 +30,26 @@ M = 4; N = 8. -> 30
 
 
 
-    int SumNumbers(int m, int n)
-    {
-         if(m < n)
-         { 
-            return m + SumNumbers(m + 1,n);
-         }
-         if(m > n)
-         {  
-            return m + SumNumbers(m - 1,n);
-         }
+    // int SumNumbers(int m, int n)
+    // {
+    //      if(m < n)
+    //      { 
+    //         return m + SumNumbers(m + 1,n);
+    //      }
+    //      if(m > n)
+    //      {  
+    //         return m + SumNumbers(m - 1,n);
+    //      }
 
-       return n;       
-    }
+    //    return n;       
+    // }
     
-    Console.Write("Enter number M: ");
-    int m = Convert.ToInt32(Console.ReadLine());
-    Console.Write("Enter number N: ");
-    int n = Convert.ToInt32(Console.ReadLine());
-    int res = SumNumbers(m,n);
-    Console.WriteLine("Sum: " + (res));
+    // Console.Write("Enter number M: ");
+    // int m = Convert.ToInt32(Console.ReadLine());
+    // Console.Write("Enter number N: ");
+    // int n = Convert.ToInt32(Console.ReadLine());
+    // int res = SumNumbers(m,n);
+    // Console.WriteLine("Sum: " + (res));
 
 
 
@@ -58,3 +58,28 @@ M = 4; N = 8. -> 30
 m = 2, n = 3 -> A(m,n) = 9
 m = 3, n = 2 -> A(m,n) = 29 
 */
+
+    int Ackermann(int m, int n)
+    {
+         
+            if (m == 0)
+            {
+               return n + 1;
+            }
+            if (m > 0 && n == 0)
+            {
+                return Ackermann(m - 1, 1);
+            }
+            else
+            {
+               return Ackermann(m - 1, Ackermann(m, n - 1));
+            }
+              
+    }
+    
+    Console.Write("Enter number M: ");
+    int m = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Enter number N: ");
+    int n = Convert.ToInt32(Console.ReadLine());
+    int res = Ackermann(m,n);
+    Console.WriteLine("A: " + (res));
