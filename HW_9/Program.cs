@@ -77,10 +77,10 @@ m = 3, n = 2 -> A(m,n) = 29
               
     }
     
-    Console.Write("Enter number M: ");
+    Console.Write("Enter number m: ");
     int m = Convert.ToInt32(Console.ReadLine());
-    Console.Write("Enter number N: ");
+    Console.Write("Enter number n: ");
     int n = Convert.ToInt32(Console.ReadLine());
     int res = Ackermann(m,n);
-    Console.WriteLine("A: " + (res));
+    Console.WriteLine($"A(m,n) = {res}");
     
