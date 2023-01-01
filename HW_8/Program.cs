@@ -15,74 +15,74 @@
 8 4 4 2 
 */
 
-int[,] CreateRandomArray()
-{
-    Console.WriteLine("input a number of rows: ");
-    int rows = Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine("input a number of colums: ");
-    int colums = Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine("input a min possible value: ");
-    int minValue = Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine("input a max possible value: ");
-    int maxValue = Convert.ToInt32(Console.ReadLine());
-    
-    int[,] array = new int[rows, colums];
+// int[,] CreateRandomArray()
+// {
+//     Console.WriteLine("input a number of rows: ");
+//     int rows = Convert.ToInt32(Console.ReadLine());
+//     Console.WriteLine("input a number of colums: ");
+//     int colums = Convert.ToInt32(Console.ReadLine());
+//     Console.WriteLine("input a min possible value: ");
+//     int minValue = Convert.ToInt32(Console.ReadLine());
+//     Console.WriteLine("input a max possible value: ");
+//     int maxValue = Convert.ToInt32(Console.ReadLine());
 
-    for(int i = 0; i < rows; i++)
-    {
-        for(int j = 0; j < colums; j++)
-        {
-            array[i,j] = new Random().Next(minValue, maxValue);
-        }
-    }
-    return array;
-}
-void Show2dArray(int[,] array)
-{   
-    Console.WriteLine("--------------------------");
+//     int[,] array = new int[rows, colums];
 
-    for(int i = 0; i < array.GetLength(0);i++)
-    {
-        for(int j = 0; j < array.GetLength(1); j++)
-        {   
-            Console.Write(array[i,j] + "\t");
-        }
-       
-       Console.WriteLine(); 
+//     for(int i = 0; i < rows; i++)
+//     {
+//         for(int j = 0; j < colums; j++)
+//         {
+//             array[i,j] = new Random().Next(minValue, maxValue);
+//         }
+//     }
+//     return array;
+// }
+// void Show2dArray(int[,] array)
+// {   
+//     Console.WriteLine("--------------------------");
 
-    }
-    
-    Console.WriteLine("--------------------------");
-    
-}
+//     for(int i = 0; i < array.GetLength(0);i++)
+//     {
+//         for(int j = 0; j < array.GetLength(1); j++)
+//         {   
+//             Console.Write(array[i,j] + "\t");
+//         }
+
+//        Console.WriteLine(); 
+
+//     }
+
+//     Console.WriteLine("--------------------------");
+
+// }
 
 
-void SortArrayRow(int[,] array)
-{    
-   
-   for (int i = 0; i < array.GetLength(0); i++)
-   {
-      for (int j = 0; j < array.GetLength(1); j++)
-      {
-         for (int k = 0; k < array.GetLength(1) - 1; k++)
-         {      
-            if (array[i, k] < array[i, k + 1])
-            {
-                 int tmp = array[i, k + 1];
-                 array[i, k + 1] = array[i, k];
-                 array[i, k] = tmp;
-            }     
+// void SortArrayRow(int[,] array)
+// {    
 
-         }
-      }
-   }
+//    for (int i = 0; i < array.GetLength(0); i++)
+//    {
+//       for (int j = 0; j < array.GetLength(1); j++)
+//       {
+//          for (int k = 0; k < array.GetLength(1) - 1; k++)
+//          {      
+//             if (array[i, k] < array[i, k + 1])
+//             {
+//                  int tmp = array[i, k + 1];
+//                  array[i, k + 1] = array[i, k];
+//                  array[i, k] = tmp;
+//             }     
 
-}
+//          }
+//       }
+//    }
 
-int[,] myArray = CreateRandomArray();
-Show2dArray(myArray);
-SortArrayRow(myArray);
-Show2dArray(myArray);
+// }
+
+// int[,] myArray = CreateRandomArray();
+// Show2dArray(myArray);
+// SortArrayRow(myArray);
+// Show2dArray(myArray);
 
 
 
@@ -96,6 +96,113 @@ Show2dArray(myArray);
 Программа считает сумму элементов в каждой строке и выдаёт номер строки с наименьшей суммой элементов: 1 строка
 */
 
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        int[,] CreateRandomArray()
+        {
+            Console.WriteLine("input a number of rows: ");
+            int rows = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("input a number of colums: ");
+            int colums = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("input a min possible value: ");
+            int minValue = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("input a max possible value: ");
+            int maxValue = Convert.ToInt32(Console.ReadLine());
+
+            int[,] array = new int[rows, colums];
+
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < colums; j++)
+                {
+                    array[i, j] = new Random().Next(minValue, maxValue);
+                }
+            }
+            return array;
+        }
+
+        void Show2dArray(int[,] array)
+        {
+            Console.WriteLine("--------------------------");
+
+            for (int i = 0; i < array.GetLength(0); i++)
+            {
+                for (int j = 0; j < array.GetLength(1); j++)
+                {
+                    Console.Write(array[i, j] + "\t");
+                }
+
+                Console.WriteLine();
+
+            }
+
+            Console.WriteLine("--------------------------");
+        }
+
+        void PrintArray(int[] array)
+        {
+            for (int i = 0; i < array.Length; i++)
+            {
+                Console.Write(array[i] + "\t");
+            }
+            Console.WriteLine();
+        }
+
+
+        int[] SumElementsRow(int[,] array)
+        {
+            int[] myArr = new int[array.GetLength(0)];
+
+            for (int i = 0; i < array.GetLength(0); i++)
+            {
+                int sum = 0;
+
+                for (int j = 0; j < array.GetLength(1); j++)
+                {
+                    sum += array[i, j];
+                }
+
+                myArr[i] = sum;
+            }
+
+            return myArr;
+
+        }
+
+        void CheckMinSumElementRow(int[] array)
+        {
+            int min = array[0];
+            int index = 0;
+         
+                
+               if (array[0] < min) min = array[0];
+               if (array[1] < min) min = array[1];
+               if (array[2] < min) min = array[2];
+               if (array[3] < min) min = array[3];
+
+               for (int i = 0; i < array.Length; i++)
+               {
+                    if (array[i] == min)
+                    {
+                      index++;
+                    }
+               }
+
+
+                
+            Console.Write($"\n {index} row with the smallest sum ({min}) elements "); 
+
+        }
+
+        int[,] myArray = CreateRandomArray();
+        Show2dArray(myArray);
+        int[] sumRowArray = SumElementsRow(myArray);
+        PrintArray(sumRowArray);
+        CheckMinSumElementRow(sumRowArray);
+    }
+}
 
 
 
