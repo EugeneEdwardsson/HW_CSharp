@@ -186,13 +186,13 @@ internal class Program
                {
                     if (array[i] == min)
                     {
-                      index++;
+                      index = i;
                     }
                }
 
 
                 
-            Console.Write($"\n {index} row with the smallest sum ({min}) elements "); 
+            Console.Write($"\n {index + 1} row with the smallest sum ({min}) elements "); 
 
         }
 
