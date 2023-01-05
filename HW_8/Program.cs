@@ -323,8 +323,69 @@
 */
 
 
+// void FillSquadArray2D(int[,] array)
+// {
+  
+//     int temp = 1;
+//     int i = 0;
+//     int j = 0;
+
+//     while (temp <= array.GetLength(0) * array.GetLength(1))
+//     {
+//         array[i, j] = temp;
+//         temp++;
+
+//      if (i <= j + 1 && i + j < array.GetLength(1) - 1)
+//          j++;
+//      else if (i < j && i + j >= array.GetLength(0) - 1)
+//          i++;
+//      else if (i >= j && i + j > array.GetLength(1) - 1)
+//          j--;
+//      else
+//          i--;
+
+//     }
+
+// }
+
+
+// int[,] CreateRandomArray()
+// {
+//         Console.WriteLine("input a number of rows: ");
+//         int rows = Convert.ToInt32(Console.ReadLine());
+//         Console.WriteLine("input a number of colums: ");
+//         int colums = Convert.ToInt32(Console.ReadLine());
+
+
+//         int[,] array = new int[rows, colums];
+            
+//         return array;
+
+// }
+ 
+
+// void Show2dArray(int[,] array)
+// {   
+//     Console.WriteLine("--------------------------");
+
+//     for(int i = 0; i < array.GetLength(0);i++)
+//     {
+//         for(int j = 0; j < array.GetLength(1); j++)
+//         {   
+//                Console.Write(array[i,j] + "\t");     
+//         }
+
+//        Console.WriteLine(); 
+
+//     }
+
+//     Console.WriteLine("--------------------------");
+
+// }
 
 
 
-
+// int[,] squareArray = CreateRandomArray();
+// FillSquadArray2D(squareArray);
+// Show2dArray(squareArray);
 
