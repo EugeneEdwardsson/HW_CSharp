@@ -202,6 +202,8 @@
     
 
 
+
+
 /*
 Задача 58: Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
 Например, даны 2 матрицы:
@@ -214,7 +216,74 @@
 
 
 
+// void CreateRandomArray(int[,] array)
+// {
+//   for (int i = 0; i < array.GetLength(0); i++)
+//   {
+//     for (int j = 0; j < array.GetLength(1); j++)
+//     {
+//       array[i, j] = new Random().Next(1,10);
+//     }
+//   }
+// }
 
+// void Show2dArray(int[,] array)
+// {   
+//     Console.WriteLine("--------------------------");
+
+//     for(int i = 0; i < array.GetLength(0);i++)
+//     {
+//         for(int j = 0; j < array.GetLength(1); j++)
+//         {   
+//             Console.Write(array[i,j] + "\t");
+//         }
+
+//        Console.WriteLine(); 
+
+//     }
+
+//     Console.WriteLine("--------------------------");
+
+// }
+
+// void MatrixMult(int[,] firstMartrix, int[,] secondMartrix, int[,] resultMatrix)
+// {
+//   for (int i = 0; i < resultMatrix.GetLength(0); i++)
+//   {
+//     for (int j = 0; j < resultMatrix.GetLength(1); j++)
+//     {
+//       int sum = 0;
+//       for (int k = 0; k < firstMartrix.GetLength(1); k++)
+//       {
+//         sum += firstMartrix[i,k] * secondMartrix[k,j];
+//       }
+//       resultMatrix[i,j] = sum;
+//     }
+//   }
+// }
+
+// Console.WriteLine("---Set parameters for future matrices---");
+// Console.WriteLine("input a number of rows: ");
+// int rows = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("input a number of colums: ");
+// int colums = Convert.ToInt32(Console.ReadLine());
+
+
+
+// int[,] firstMartrix = new int[rows,colums];
+// CreateRandomArray(firstMartrix);
+// Console.WriteLine("First matrix:");
+// Show2dArray(firstMartrix);
+
+// int[,] secondMartrix = new int[rows,colums];
+// CreateRandomArray(secondMartrix);
+// Console.WriteLine("Second matrix:");
+// Show2dArray(secondMartrix);
+
+// int[,] resultMatrix = new int[rows,colums];
+// MatrixMult(firstMartrix, secondMartrix, resultMatrix);
+// Console.WriteLine("The result of multiplying two matrices:");
+// Show2dArray(resultMatrix);
 
 
 
@@ -252,6 +321,9 @@
 11 16 15 06
 10 09 08 07
 */
+
+
+
 
 
 
